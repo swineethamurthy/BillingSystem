@@ -12,7 +12,7 @@ public class PrintReceipt {
 		 float unitPrice;
 		 float purchasedQuantity;
 		 float totalCost = 0;
-	      for(String key:unitPricing) {
+	      for(String key:purchaseDtls) {
 	    	 unitPrice = Float.parseFloat(pricingDetails.get(key).toString());
 	    	 purchasedQuantity = Float.parseFloat(purchaseDetails.get(key).toString());
 	    	 billAmt = unitPrice *purchasedQuantity;
